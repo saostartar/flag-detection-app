@@ -1,0 +1,10 @@
+flask
+inference-sdk
+flask-cors
+flask-sqlalchemy
+flask-login
+flask-migrate
+pymysql
+python-dotenv
+werkzeug
+gunicorn
