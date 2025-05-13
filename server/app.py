@@ -7,6 +7,7 @@ from domain.models.user import User
 from presentation.api.detection_routes import detection_bp
 from presentation.api.admin_routes import admin_bp
 from presentation.api.user_routes import user_bp
+from presentation.api.manual_calculation_routes import manual_calculation_bp
 from config import config_by_name
 import os
 
@@ -35,6 +36,7 @@ def create_app(config_name='development'):
     app.register_blueprint(detection_bp)
     app.register_blueprint(admin_bp)
     app.register_blueprint(user_bp)
+    app.register_blueprint(manual_calculation_bp)
     
     @app.route('/health')
     def health_check():
